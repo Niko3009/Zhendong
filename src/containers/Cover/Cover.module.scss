@@ -1,0 +1,23 @@
+@import '@/assets/all.scss';
+
+$hiding-duration: 500ms;
+
+:export {
+    hidingDuration: $hiding-duration;
+}
+
+.wrapper {
+    z-index: 10;
+    transition: all $hiding-duration;
+}
+
+.hidden {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include disable-interaction;
+    visibility: hidden;
+    opacity: 0;
+}

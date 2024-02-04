@@ -1,0 +1,18 @@
+{
+  "data": {
+    "header": {
+      "logo": {"src":"/svg/logo.svg"},
+      "menu": [],
+      "actions": []
+    },
+
+    "footer": {
+      "copyright": "© 2023 Zhendong",
+      "policy": {
+        "title": "Пользовательское соглашение",
+        "link": "",
+        "props": []
+      }
+    }
+  }
+}

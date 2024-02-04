@@ -1,0 +1,110 @@
+@import '@/assets/all.scss';
+
+.filtersPanel {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: visible;
+
+    * {
+        user-select: none;
+        overflow: visible;
+    }
+
+    h1 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    button {
+        padding: 0;
+    }
+
+    .modalTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        * {
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            margin-left: 4px;
+            font-size: 24px;
+        }
+
+        .resetButton {
+            cursor: pointer;
+        }
+    }
+
+    .locationSelects {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .locationItem {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            color: $grey-color-1;
+        }
+
+        .location {
+            color: $blue-color;
+        }
+    }
+
+    .contType {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .contTypeButtons {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            &>* {
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    border-left: none;
+                }
+            }
+        }
+    }
+
+    .cost {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        gap: 8px;
+
+        .costInputsBox {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .cost-slider-box {
+            position: absolute;
+            bottom: 0;
+            height: 0;
+            overflow: visible;
+        }
+    }
+}
+
+@import './FiltersPanel_desktop.module.scss';

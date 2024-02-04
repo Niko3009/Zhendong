@@ -1,0 +1,27 @@
+variables:
+    HOST: '91.201.54.49'
+    PORT: '22'
+    USER: 'zhendong'
+    DOC_ROOT: '/home/zhendong/zhendong.rgtest.ru/www'
+
+stages:
+    - deploy
+
+before_script:
+    - apt-get update -qq && apt-get install
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy_job:
+    stage: deploy
+    only:
+        - develop
+    script:
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && pm2 stop zhendong"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && git checkout develop"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && git reset --hard HEAD"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && git pull origin $CI_COMMIT_REF_NAME"
+        - ssh $USER@$HOST -p $PORT "cd $DOC_ROOT && pm2 start zhendong"

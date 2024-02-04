@@ -1,0 +1,61 @@
+{
+  "name": "homepage",
+
+  "data": {
+    "og": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+
+    "modules": {
+      "hero-section": {
+        "order": 1,
+        "name": "hero-section",
+        "data": {}
+      },
+
+      "proposed-services": {
+        "order": 2,
+        "name": "proposed-services",
+        "data": {}
+      },
+
+      "about-company": {
+        "order": 3,
+        "name": "about-company",
+        "data": {}
+      },
+
+      "reasons": {
+        "order": 4,
+        "name": "reasons",
+        "data": {}
+      },
+
+      "achievements": {
+        "order": 5,
+        "name": "achievements",
+        "data": {}
+      },
+
+      "containers-map": {
+        "order": 6,
+        "name": "containers-map",
+        "data": {}
+      },
+
+      "banner-proposal": {
+        "order": 7,
+        "name": "banner-proposal",
+        "data": {}
+      },
+
+      "request-form": {
+        "order": 8,
+        "name": "request-form",
+        "data": {}
+      }
+    }
+  }
+}

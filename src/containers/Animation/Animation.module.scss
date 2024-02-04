@@ -1,0 +1,21 @@
+@import '@/assets/all.scss';
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+// $device-max-width: calc($desktop-start - 1px);
+// $device: "#{$screen} and (max-width: #{$device-max-width})";
+
+// @media #{$device} {
+
+//     .wrapper {
+
+//         &[data-aos],
+//         &.aos-animate {
+//             all: unset;
+//         }
+//     }
+// }

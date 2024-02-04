@@ -1,0 +1,37 @@
+{
+  "name": "proposed-services",
+
+  "data": {
+    "list": [
+      {
+        "id": "container-equipment-delivery",
+        "img": { "src": "/svg/special/container.svg" },
+        "name": "Доставка контейнерного оборудования"
+      },
+
+      {
+        "id": "transit",
+        "img": { "src": "/svg/special/globe-1.svg" },
+        "name": "Транзит"
+      },
+
+      {
+        "id": "sea-transportation",
+        "img": { "src": "/svg/special/ship.svg" },
+        "name": "Предоставление контейнерного оборудования"
+      },
+
+      {
+        "id": "agency-service",
+        "img": { "src": "/svg/special/barcode.svg" },
+        "name": "Агентирование в портах Китая"
+      },
+
+      {
+        "id": "truck-service",
+        "img": { "src": "/svg/special/truck.svg" },
+        "name": "Автоподвоз"
+      }
+    ]
+  }
+}

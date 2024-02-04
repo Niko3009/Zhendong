@@ -1,0 +1,117 @@
+{
+  "list": [
+    {
+      "locations": {
+        "departure": "Россия, Москва",
+        "arrival": "Китай, Шанхай"
+      },
+      "info": {
+        "20DC": {
+          "cost": "$700",
+          "conditions": "60 дней, СНП $8",
+          "available": "82 шт."
+        },
+        "40HC": {
+          "cost": "$1,200",
+          "conditions": "60 дней, СНП $10",
+          "available": "82 шт."
+        }
+      }
+    },
+    
+    {
+      "locations": {
+        "departure": "Россия, Москва",
+        "arrival": "Китай, Шанхай"
+      },
+      "info": {
+        "20DC": {
+          "cost": "$700",
+          "conditions": "60 дней, СНП $8",
+          "available": "82 шт."
+        },
+        "40HC": {
+          "cost": "$1,200",
+          "conditions": "60 дней, СНП $10",
+          "available": "82 шт."
+        }
+      }
+    },
+
+    {
+      "locations": {
+        "departure": "Россия, Москва",
+        "arrival": "Китай, Шанхай"
+      },
+      "info": {
+        "20DC": {
+          "cost": "$700",
+          "conditions": "60 дней, СНП $8",
+          "available": "82 шт."
+        },
+        "40HC": {
+          "cost": "$1,200",
+          "conditions": "60 дней, СНП $10",
+          "available": "82 шт."
+        }
+      }
+    },
+
+    {
+      "locations": {
+        "departure": "Россия, Москва",
+        "arrival": "Китай, Шанхай"
+      },
+      "info": {
+        "20DC": {
+          "cost": "$700",
+          "conditions": "60 дней, СНП $8",
+          "available": "82 шт."
+        },
+        "40HC": {
+          "cost": "$1,200",
+          "conditions": "60 дней, СНП $10",
+          "available": "82 шт."
+        }
+      }
+    },
+
+    {
+      "locations": {
+        "departure": "Россия, Москва",
+        "arrival": "Китай, Шанхай"
+      },
+      "info": {
+        "20DC": {
+          "cost": "$700",
+          "conditions": "60 дней, СНП $8",
+          "available": "82 шт."
+        },
+        "40HC": {
+          "cost": "$1,200",
+          "conditions": "60 дней, СНП $10",
+          "available": "82 шт."
+        }
+      }
+    },
+
+    {
+      "locations": {
+        "departure": "Россия, Москва",
+        "arrival": "Китай, Шанхай"
+      },
+      "info": {
+        "20DC": {
+          "cost": "$700",
+          "conditions": "60 дней, СНП $8",
+          "available": "82 шт."
+        },
+        "40HC": {
+          "cost": "$1,200",
+          "conditions": "60 дней, СНП $10",
+          "available": "82 шт."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "homepage",
+
+  "data": {
+    "og": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+
+    "modules": {
+      "heading": {
+        "order": 1,
+        "name": "heading",
+        "data": {
+          "title": "Вакансии",
+          "description": "Переходите на страницу вакансий и отправляйте ваше резюме"
+        }
+      },
+
+      "all-vacancies": {
+        "order": 2,
+        "name": "all-vacancies",
+        "data": {}
+      },
+
+      "job-advantages": {
+        "order": 3,
+        "name": "job-advantages",
+        "data": {}
+      },
+
+      "banner-hh": {
+        "order": 4,
+        "name": "banner-hh",
+        "data": {}
+      }
+    }
+  }
+}

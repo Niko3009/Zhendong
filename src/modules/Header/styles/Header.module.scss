@@ -1,0 +1,222 @@
+@import '@/assets/all.scss';
+@import '@/app/layout.module.scss';
+
+.module {
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+
+    padding-left: calc((100% - $container-max-width - $scrollbar-width)/2);
+    padding-right: calc((100% - $container-max-width + $scrollbar-width)/2);
+
+    background: $white-color;
+
+    &,
+    div {
+        overflow: visible;
+    }
+}
+
+.wrapper {
+    height: $mobile-header-height;
+    width: 100%;
+    background-color: $white-color;
+
+    button {
+        width: 100%;
+        padding: 0;
+
+        &:active {
+            transform: none;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: $white-color;
+    text-transform: uppercase;
+}
+
+.logoBox {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding-left: 0;
+
+    .logo {
+        position: relative;
+        height: 100%;
+        width: 200px;
+        cursor: pointer;
+    }
+}
+
+.fixedNav {
+    display: none;
+}
+
+.droppedNav {
+    width: auto;
+
+    .iconBox {
+        width: 32px;
+        height: 32px;
+
+        @include mouse-hover {
+            background-color: $grey-color;
+        }
+    }
+
+    .icon {
+        height: 32px;
+        width: 32px;
+        color: $blue-color;
+        cursor: pointer
+    }
+}
+
+.droppedWindow {
+    z-index: -1;
+    position: absolute;
+    top: $mobile-header-height;
+    left: 0;
+    height: auto;
+    width: 100vw;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: transparent;
+    // transition: all 500ms;
+
+    .buttonBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $grey-color;
+        padding: 40px 24px;
+        gap: 16px;
+
+        &>* {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    &.inactive {
+        display: none;
+        top: -2000px;
+        @include disable-interaction;
+    }
+}
+
+
+
+@media #{$tablet} {
+    .wrapper {
+        height: $tablet-header-height;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+
+    .droppedWindow {
+        z-index: -1;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        height: auto;
+
+        display: grid;
+        grid-template-rows: auto 1fr;
+
+        .buttonBox {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: $grey-color;
+            padding: 40px 24px;
+            gap: 16px;
+
+            &>* {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+            }
+        }
+    }
+}
+
+
+
+@media #{$desktop} {
+    .wrapper {
+        height: $desktop-header-height;
+    }
+
+    .content {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+
+    .logoBox {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding-left: 40px;
+
+        .logo {
+            width: 240px;
+        }
+    }
+
+    .fixedNav {
+        height: 100%;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        &>* {
+            &:nth-child(1) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+            }
+        }
+    }
+
+    .droppedWindow,
+    .droppedNav {
+        display: none;
+    }
+}

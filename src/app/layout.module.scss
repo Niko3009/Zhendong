@@ -1,0 +1,44 @@
+@import '@/assets/all.scss';
+
+$mobile-content-height: calc(100dvh - $mobile-header-height);
+$tablet-content-height: calc(100dvh - $tablet-header-height);
+$desktop-content-height: calc(100dvh - $desktop-header-height);
+
+.layout {
+    width: 100vw;
+    height: 100%;
+    max-height: 100%;
+}
+
+.scrolled {
+    height: $mobile-content-height;
+    position: relative;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.module {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0 $container-min-padding;
+}
+
+@media #{$tablet} {
+    .scrolled {
+        height: $tablet-content-height;
+    }
+}
+
+@media #{$desktop} {
+    .scrolled {
+        height: $desktop-content-height;
+    }
+}

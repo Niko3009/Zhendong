@@ -1,0 +1,36 @@
+{
+  "name": "homepage",
+
+  "data": {
+    "og": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+
+    "modules": {
+      "heading": {
+        "order": 1,
+        "name": "heading",
+        "data": {
+          "title": "Контейнерное оборудование",
+          "description": "У нас имеются потребности в оборудовании. Ниже вы можете с ними ознакомится, оставить заявку и предложить своё оборудование нам"
+        }
+      },
+
+      "catalog": {
+        "order": 2,
+        "name": "catalog",
+        "data": {}
+      },
+
+      "request-form": {
+        "order": 3,
+        "name": "request-form",
+        "data": {
+          "title": "Предложить своё оборудование"
+        }
+      }
+    }
+  }
+}

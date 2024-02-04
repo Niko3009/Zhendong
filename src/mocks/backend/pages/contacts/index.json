@@ -1,0 +1,33 @@
+{
+  "name": "about",
+
+  "data": {
+    "og": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+
+    "modules": {
+      "heading": {
+        "order": 1,
+        "name": "heading",
+        "data": {
+          "title": "Контакты"
+        }
+      },
+
+      "contacts-map": {
+        "order": 2,
+        "name": "contacts-map",
+        "data": {}
+      },
+
+      "banner-requisites": {
+        "order": 3,
+        "name": "banner-requisites",
+        "data": {}
+      }
+    }
+  }
+}

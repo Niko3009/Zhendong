@@ -1,0 +1,12 @@
+{
+  "name": "proposed-vacancies",
+
+  "data": {
+    "list": [
+      {
+        "name": "Менеджер по работе с клиентами (офис)",
+        "conditions": { "place": "Москва", "salary": "80 000 – 145 000 ₽" }
+      }
+    ]
+  }
+}

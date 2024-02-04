@@ -1,0 +1,24 @@
+{
+  "name": "hero-section",
+
+  "data": {
+    "title": "Организация международных грузоперевозок",
+    "description": "Полный комплекс транспортно-экспедиторских услуг по всему миру",
+    "slider-data": {
+      "slides": [
+        {
+          "img": { "src": "/slides/homepage/slide (1).jpg" }
+        },
+        {
+          "img": { "src": "/slides/homepage/slide (2).jpg" }
+        },
+        {
+          "img": { "src": "/slides/homepage/slide (3).jpg" }
+        },
+        {
+          "img": { "src": "/slides/homepage/slide (4).jpg" }
+        }
+      ]
+    }
+  }
+}

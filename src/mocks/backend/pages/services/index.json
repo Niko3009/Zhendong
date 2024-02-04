@@ -1,0 +1,45 @@
+{
+  "name": "services",
+
+  "data": {
+    "og": {
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+
+    "modules": {
+      "heading": {
+        "order": 1,
+        "name": "heading",
+        "data": {
+          "title": "Услуги"
+        }
+      },
+
+      "all-services": {
+        "order": 2,
+        "name": "all-services",
+        "data": {}
+      },
+
+      "banner-rent": {
+        "order": 3,
+        "name": "banner-rent",
+        "data": {}
+      },
+
+      "banner-proposal": {
+        "order": 4,
+        "name": "banner-proposal",
+        "data": {}
+      },
+
+      "request-form": {
+        "order": 5,
+        "name": "request-form",
+        "data": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '@/assets/all.scss';
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    height: auto;
+    width: auto;
+    max-height: 90%;
+    max-width: 100%;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: transparent;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+
+    div {
+        overflow: visible;
+    }
+}
+
+.closeButtonBox {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+
+    background-color: $white-color;
+    cursor: pointer;
+
+    .closeIcon {
+        height: 24px;
+        width: 24px;
+        color: $blue-color;
+    }
+}

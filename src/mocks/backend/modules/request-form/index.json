@@ -1,0 +1,27 @@
+{
+  "name": "request-form",
+
+  "data": {
+    "title": "Заявка на услугу",
+    "description": "Оставьте заявку, наш менеджер свяжется с вами для обсуждения деталей",
+    "success-logo": { "src": "/svg/special/form-sending-message.svg" },
+    "services-tabs": [
+      {
+        "id": "container-equipment-delivery",
+        "name": "Доставка контейнерного оборудования"
+      },
+      {
+        "id": "transit",
+        "name": "Транзит"
+      },
+      {
+        "id": "sea-transportation",
+        "name": "Морские перевозки"
+      },
+      {
+        "id": "railway-transportation",
+        "name": "Железнодорожные перевозки"
+      }
+    ]
+  }
+}

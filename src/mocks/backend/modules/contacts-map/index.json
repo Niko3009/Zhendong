@@ -1,0 +1,32 @@
+{
+  "name": "contacts-map",
+
+  "data": {
+    "list": [
+      {
+        "office": {
+          "city": "Санкт-Петербург",
+          "address": "196191, пл. Конституции, д.7, литер А., (офис №533 б)",
+          "worktime": "пн-пт 9:00 — 18:00"
+        },
+        "phones": ["8 (812) 507-62-63", "8 (812) 507-62-63"]
+      },
+      {
+        "office": {
+          "city": "Москва",
+          "address": "117105, Варшавское шоссе, д. 1, строение 1-2, этаж 1, помещение 1, офис 10В",
+          "worktime": "пн-пт 9:00 — 18:00"
+        },
+        "phones": ["пн-пт 9:00 — 18:00"]
+      },
+      {
+        "office": {
+          "city": "«Hubei Ancheng International Logistics Co., Ltd»",
+          "address": "2-1, No. 8 North Block, Hongda Market, Wenbi Avenue, Xian'an District, Xianning City, Hubei Province",
+          "worktime": "пн-пт 9:00 — 18:00"
+        },
+        "phones": ["8 (812) 507-62-63"]
+      }
+    ]
+  }
+}
